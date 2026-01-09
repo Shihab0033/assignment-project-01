@@ -129,6 +129,7 @@ nav .menu {
     height: 480px;
     width: 480px;
     border-radius: 12px;
+    position: left;
 }
 
 .k-text {
@@ -177,4 +178,45 @@ nav .menu {
 .items p {
     color: #001931;
     font-size: 16px;
+}
+
+/* Early access section */
+#early-access {
+    width: 1360px;
+    height: 384px;
+    background-color: #F7F6F2;
+    border: 1px solid #F7F6F2;
+    border-radius: 12px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.early-access-container {
+    margin: 80px 40px;
+}
+
+.early-access-container h2 {
+    color: #001931;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.early-access-container p {
+    color: #627382;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.early-access-container button {
+    background-color: #469165;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 16px;
+    width: 194px;
+    height: 52px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 6px 50px 0 #00000025;
+    padding: 16px;
 }
