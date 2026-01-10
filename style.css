@@ -14,6 +14,12 @@ body {
     background-color: white;
 }
 
+.btn:hover {
+    background-color: #F95555;
+}
+
+
+/* Navigation Section CSS */
 nav {
     max-height: 72px;
     margin: 0 auto;
@@ -68,15 +74,7 @@ a {
 
 }
 
-/* #banner {
-    margin-top: 16px;
-    height: 674px;
-    background-image: url(./assets/hero-bg.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    align-content: center;
-    justify-items: center;
-} */
+
 
 #banner {
     margin-top: 16px;
@@ -103,34 +101,26 @@ a {
     align-items: center;
 
     margin: 0;
-    /* auto REMOVE */
+
 }
 
 
-/* .banner-content {
-    width: 1360px;
-    height: 379px;
-    border: 1px yellow solid;
-    /* margin: auto auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-} */
-
-
-/* Notes Section CSS */
 
 #top {
     background-color: #ffffff;
     color: #276941;
     font-size: 16px;
     margin-bottom: 16px;
-    width: 229px;
+    width: 235px;
     height: 35px;
     border: none;
     border-radius: 1000px;
     box-shadow: 0 6px 50px 0 #00000025;
-    padding: 8px 12px 8px 34px;
+    padding: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .h1 {
@@ -154,7 +144,10 @@ a {
     margin-top: 32px;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
+
+
 
 #green {
     background-color: #469165;
@@ -162,10 +155,15 @@ a {
     height: 52px;
     color: #ffffff;
     margin-right: 16px;
-    padding-left: 0px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 16px;
+    padding: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#green:hover {
+    background-color: #F95555;
 }
 
 #trans {
@@ -174,10 +172,15 @@ a {
     width: 251px;
     height: 52px;
     color: #ffffff;
-    padding-left: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 0px;
+    padding: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#trans:hover {
+    background-color: #F95555;
 }
 
 /* Notes Section CSS */
@@ -372,24 +375,13 @@ a {
     border-radius: 4px;
     box-shadow: 0 6px 50px 0 #00000025;
     padding: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 
-/* Footer Section CSS */
-/* #footer {
-    height: 348px;
-    border: 1px solid red;
-    background-color: #001931;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.bottom {
-    display: block;
-} */
 
 
 #footer {
@@ -397,13 +389,13 @@ a {
     padding: 60px 80px 40px;
 }
 
-/* container column বানালাম */
+
 .footer-container {
     display: flex;
     flex-direction: column;
 }
 
-/* top row */
+
 .footer-top {
     display: flex;
     justify-content: space-between;
@@ -413,6 +405,10 @@ a {
 .social p {
     color: #ffffff;
     margin-bottom: 16px;
+}
+
+.social img {
+    cursor: pointer;
 }
 
 /* horizontal white line */
