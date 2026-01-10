@@ -16,11 +16,10 @@ body {
 
 nav {
     max-height: 72px;
-    /* border: 1px solid brown; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+
 }
 
 nav .menu #list {
@@ -69,7 +68,7 @@ a {
 
 }
 
-#banner {
+/* #banner {
     margin-top: 16px;
     height: 674px;
     background-image: url(./assets/hero-bg.png);
@@ -77,21 +76,111 @@ a {
     background-repeat: no-repeat;
     align-content: center;
     justify-items: center;
+} */
+
+#banner {
+    margin-top: 16px;
+    height: 674px;
+    background-image: url(./assets/hero-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .banner-content {
     width: 1360px;
     height: 379px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    /* auto REMOVE */
+}
+
+
+/* .banner-content {
+    width: 1360px;
+    height: 379px;
     border: 1px yellow solid;
-    /* margin: 0 auto; */
+    /* margin: auto auto;
     text-align: center;
     justify-content: center;
     align-items: center;
-}
+} */
+
 
 /* Notes Section CSS */
 
+#top {
+    background-color: #ffffff;
+    color: #276941;
+    font-size: 16px;
+    margin-bottom: 16px;
+    width: 229px;
+    height: 35px;
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 0 6px 50px 0 #00000025;
+    padding: 8px 12px 8px 34px;
+}
+
+.h1 {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 84px;
+    color: #ffffff;
+    width: 770px;
+    height: 168px;
+    margin-bottom: 16px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.duo-button {
+    font-size: 16px;
+    margin-top: 32px;
+    border: none;
+    border-radius: 4px;
+}
+
+#green {
+    background-color: #469165;
+    width: 251px;
+    height: 52px;
+    color: #ffffff;
+    margin-right: 16px;
+    padding-left: 0px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+}
+
+#trans {
+    background: transparent;
+    border: 1px solid white;
+    width: 251px;
+    height: 52px;
+    color: #ffffff;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 0px;
+}
+
+/* Notes Section CSS */
 #notes {
     height: 496px;
     width: 1360;
@@ -134,9 +223,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* horizontal center */
     justify-content: center;
-    /* vertical center */
+
     text-align: center;
 }
 
