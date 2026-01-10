@@ -193,12 +193,18 @@ a {
     align-items: center;
 }
 
+.note-title {
+    width: 1360px;
+    height: 152px;
+}
+
 .note-title h2 {
     text-align: center;
     margin-bottom: 16px;
     font-size: 48px;
     font-weight: bold;
 }
+
 
 .note-title p {
     text-align: center;
