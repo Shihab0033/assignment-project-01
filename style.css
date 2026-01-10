@@ -15,32 +15,63 @@ body {
 }
 
 nav {
-    width: 71%;
-    max-width: 1140px;
+    max-height: 72px;
     /* border: 1px solid brown; */
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /* align-items: center; */
 }
 
-nav .menu {
+nav .menu #list {
     display: flex;
     list-style: none;
     gap: 51px;
     align-items: center;
 }
 
+.logo {
+    width: 139px;
+    height: 60px;
+    margin-left: 120px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+#list li,
+a {
+    text-decoration: none;
+    color: #000000;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+.gea-button {
+    width: 164px;
+    height: 44px;
+    background-color: #469165;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 12px 16px 12px 16px;
+    /*top-down left-right*/
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 120px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .hero-img img {
     width: 1600px;
     height: 674px;
-    /* display: block; */
+
 }
 
 #banner {
     margin-top: 16px;
     height: 674px;
-    width: 1536px;
     background-image: url(./assets/hero-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -48,23 +79,25 @@ nav .menu {
     justify-items: center;
 }
 
-/* }
-.banner-content {
-    max-width: 1360px;
-    text-align: center;
-    margin: 0 auto;
-    display: inline;
-} */
 
-#notes .note-container {
-    width: 71%;
-    max-width: 1360;
-    margin: 0 auto;
+.banner-content {
+    width: 1360px;
+    height: 379px;
+    border: 1px yellow solid;
+    /* margin: 0 auto; */
+    text-align: center;
+    justify-content: center;
     align-items: center;
 }
 
-.note-title {
-    max-width: 1360px;
+/* Notes Section CSS */
+
+#notes {
+    height: 496px;
+    width: 1360;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    align-items: center;
 }
 
 .note-title h2 {
@@ -83,53 +116,83 @@ nav .menu {
 
 .note-cards {
     display: flex;
-    max-width: 89%;
-    align-items: center;
     gap: 24px;
+    margin: 44px 120px 0px 100px;
+
 
 }
 
 .cards {
     background-color: #ffffff;
     max-width: 322px;
+    height: 300px;
     padding: 30px;
     /* border: 1px solid red; */
     box-shadow: 0 6px 50px 0 #00000016;
-    align-items: center;
+    border-radius: 8px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* horizontal center */
+    justify-content: center;
+    /* vertical center */
+    text-align: center;
 }
+
 
 .icon-circle {
     width: 60px;
     height: 60px;
     background: #F95555;
     border-radius: 50%;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 16px;
+
 }
 
-.icon-circle img {
-    width: 28px;
-    height: auto;
+.card-title {
+    font-size: 24;
+    font-weight: 700;
+    color: #001931;
+    margin-bottom: 16px;
 }
 
-#knowledge .k-container {
-    width: 89%;
-    max-width: 1360px;
+.card-info {
+    color: #627382;
+    font-size: 16px;
+    line-height: 20px;
+    width: 274px;
+    height: 40px;
+}
+
+
+
+
+
+
+/* Knowledge Section CSS */
+#knowledge {
+    width: 1360px;
     height: 480px;
+    margin: 0 auto;
+    margin-bottom: 3px;
+    margin-top: 100px;
+}
+
+.k-container {
     text-align: center;
     display: flex;
-    margin: 120px 120px 0px 120px;
-
 }
 
 .k-img img {
     height: 480px;
     width: 480px;
     border-radius: 12px;
-    position: left;
+    align-items: left;
 }
 
 .k-text {
@@ -189,6 +252,8 @@ nav .menu {
     border-radius: 12px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 120px;
+
 }
 
 .early-access-container {
@@ -219,4 +284,64 @@ nav .menu {
     border-radius: 4px;
     box-shadow: 0 6px 50px 0 #00000025;
     padding: 16px;
+}
+
+
+/* Footer Section CSS */
+/* #footer {
+    height: 348px;
+    border: 1px solid red;
+    background-color: #001931;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom {
+    display: block;
+} */
+
+
+#footer {
+    background-color: #001931;
+    padding: 60px 80px 40px;
+}
+
+/* container column বানালাম */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* top row */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social p {
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+/* horizontal white line */
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 30px 0;
+    opacity: 0.6;
+}
+
+/* bottom text */
+.bottom {
+    text-align: center;
+}
+
+.bottom p {
+    color: #ffffff;
+    font-size: 14px;
 }
